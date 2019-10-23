@@ -1,0 +1,17 @@
+<launch>
+    <node name="imu_1"
+          pkg="axis_imu"
+          type="axis_imu"
+          args="_camera_ip:=192.168.1.101 _port:=5001 _driver_ip:=192.168.1.100 _frame_id:=imu_1_frame _rate:=1000 _root_passwd:=pass"
+          ns="camera1/"/>
+    <node name="imu_2"
+          pkg="axis_imu"
+          type="axis_imu"
+          args="_camera_ip:=192.168.1.102 _port:=5002 _driver_ip:=192.168.1.100 _frame_id:=imu_2_frame _rate:=1000 _root_passwd:=pass"
+          ns="camera2/"/>
+    <node name="imu_3"
+          pkg="axis_imu"
+          type="axis_imu"
+          args="_camera_ip:=192.168.1.103 _port:=5003 _driver_ip:=192.168.1.100 _frame_id:=imu_3_frame _rate:=1000 _root_passwd:=pass"
+          ns="camera3/"/>
+</launch>

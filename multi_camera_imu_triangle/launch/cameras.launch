@@ -1,0 +1,17 @@
+<launch>
+    <node name="test"
+          pkg="axis_camera"
+          type="axis.py"
+          args="_hostname:=camera1 _use_encrypted_password:=true _password:=pass _width:=640 _height:=480"
+          ns="camera1/"/>
+    <node name="test"
+          pkg="axis_camera"
+          type="axis.py"
+          args="_hostname:=camera2 _use_encrypted_password:=true _password:=pass _width:=640 _height:=480"
+          ns="camera2/"/>
+    <node name="test"
+          pkg="axis_camera"
+          type="axis.py"
+          args="_hostname:=camera3 _use_encrypted_password:=true _password:=pass _width:=640 _height:=480"
+          ns="camera3/"/>
+</launch>

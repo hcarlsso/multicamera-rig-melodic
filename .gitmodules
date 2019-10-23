@@ -1,0 +1,12 @@
+[submodule "axis_camera"]
+	path = axis_camera
+	url = ./axis_camera/
+[submodule "y"]
+	path = axis_imu
+	url = ./axis_imu/
+[submodule "camera_info_manager_py"]
+	path = camera_info_manager_py
+	url = https://github.com/ros-perception/camera_info_manager_py
+[submodule "inertial_sense_ros"]
+	path = inertial_sense_ros
+	url = ./inertial_sense_ros/

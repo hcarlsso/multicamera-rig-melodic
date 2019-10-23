@@ -1,0 +1,17 @@
+<launch>
+    <node name="camera_1"
+          pkg="image_view"
+          type="image_view"
+          args="image:=/camera1/image_raw compressed"
+          ns="camera1/"/>
+    <node name="camera_2"
+          pkg="image_view"
+          type="image_view"
+          args="image:=/camera2/image_raw compressed"
+          ns="camera2/"/>
+    <node name="camera_3"
+          pkg="image_view"
+          type="image_view"
+          args="image:=/camera3/image_raw compressed"
+          ns="camera3/"/>
+</launch>

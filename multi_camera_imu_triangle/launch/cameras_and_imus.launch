@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find multi_camera_imu_triangle)/launch/cameras.launch" />
+    <include file="$(find multi_camera_imu_triangle)/launch/read_imus.launch" />
+</launch>
